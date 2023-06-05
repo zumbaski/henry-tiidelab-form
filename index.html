@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIIDELab | Registration Form</title>
+    <link rel="stylesheet" href="./assets/css/style.css">    
+</head>
+
+<body>
+            <!-- Registration Form  -->
+    <form action="" name="form" id="form">
+        <div class="card">
+            <img src="./assets/img/zumbaski.png" width="80" height="80" alt="logo">
+
+            <h2>Student Registration Form</h2>
+             <p>Fill out the form to apply for the training. You can consider your
+                 application accepted after you receive a confirmation email.</p>
+                <br><br><br>
+
+                <!-- Student information field -->
+            <label for="stdInfo">Student Information</label> <br>
+            <div id="stdInfo">
+                <input type="text" name="fName" id="fullName" placeholder="First Name" required>
+                <input type="text" name="mName" id="middleName" placeholder="Middle Name" required>
+                <input type="text" name="lName" id="lastName" placeholder="Last Name" required> <br>
+                <input type="date" name="dob" id="dob" placeholder="Date of Birth" required>
+                <input type="text" name="stdId" id="studentId" placeholder="Student ID" required> <br>
+            </div>
+            <!-- Address field -->
+            <div class="address">
+                <label for="address">Address</label> <br>
+                <input type="text" name="streetAddress" id="streetAddress" placeholder="Street Address" required> <br>
+                <input type="text" name="city" id="city" placeholder="City" required>
+                <input type="text" name="state" id="state" placeholder="State / Province" required> <br>
+                <input type="text" name="country" id="country" placeholder="Country" required>
+                <input type="text" name="zip" id="zip" placeholder="Zip Code" required> <br>
+            </div>
+
+            <!-- Contact field -->
+            <div class="contact">
+                <label for="contact">Contact Information</label> <br>
+                <input type="email" name="email" id="email" placeholder="E-mail" required>
+                <input type="text" name="mob" id="mob" required> <br>
+            </div>
+            <!-- Courses field -->
+            <label for="courses">Courses <span>*</span> </label> <br>
+                <span class="add"> + Add new record </span> <br>
+                <select name="course" id="course">
+                    <option value="Engineering" id="course1">Engineering</option>
+                </select>
+                <select name="level" id="level">
+                    <option value="level">Level</option>
+                    <option value="100L" id="level1">100L</option>
+                </select>
+                <select name="language" id="language">
+                    <option value="language">Language</option>
+                    <option value="English" id="language1">Python</option>
+                </select>
+                <select name="startDate" id="startDate">
+                    <option value="startDate">Start Date</option>
+                    <option value="Jan" id="startDate1" >Jan</option>
+                </select> <br>
+                <textarea id="comment" cols="80" rows="7"> Comments</textarea> <br>
+                <input type="submit" class="buttonn" id="button" value="SEND REQUEST">
+        </div>
+    </form>
+
+    <script src="./assets/js/form.js"></script>
+</body>
+
+</html>

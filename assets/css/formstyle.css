@@ -1,0 +1,22 @@
+
+h2{
+    font-family:cursive;
+}
+    b{
+        font-size: 20px;
+        color:rgb(104, 1, 51);
+    }
+    th{
+        background-color: rgb(233, 230, 230);
+        border: 1.5px solid rgb(6, 6, 49); 
+    }
+    table{
+        margin: auto;
+    }
+    img {
+    float: left;
+    border-radius: 50%;
+    margin-right:30px;
+    margin-left: 10px;
+    border:3px solid gray; 
+}

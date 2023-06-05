@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#form {
+    width: 600px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.card {
+    border: 1px solid gray;
+    margin: 0px 5px 0px 5px;
+    background-color: rgb(245, 250, 250);
+
+}
+
+label {
+    font-weight: 600;
+    margin-top: 54px;
+    line-height: 30%;
+    font-size: 13px;
+    margin: 5px;
+}
+
+
+
+#fullName,
+#lastName,
+#middleName {
+    width: 29.2%;
+    margin:5px;
+}
+
+#dob,
+#studentId,
+#country,
+#zip,
+#city,
+#state,
+#email,
+#confirmEmail {
+    width: 46%;
+    margin:5px;
+}
+
+#streetAddress {
+    width: 96.1%;
+    margin:5px;
+
+}
+
+#comment {
+    resize: none;
+    width: 97%;
+    padding-left: 5px;
+    margin:5px;
+}
+
+select {
+    width: 22.5%;
+    font-size: 11px;
+    margin-bottom: 5px;
+    border-radius: 1px;
+    margin: 5px;
+    padding: 3px;
+}
+
+#button {
+    width: 98%;
+    background: blue;
+    color: white;
+    font-weight: 600;
+    padding:3px;
+    border-radius: 2px;
+    margin: 5px;
+}
+#button:hover{
+    background-color: rgb(157, 152, 204);
+}
+
+input {
+    padding-left: 5px;
+    font-size: 12px;
+    text-decoration: solid;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    padding: 3px;}
+
+
+img {
+    float: left;
+    border-radius: 50%;
+    margin-right:30px;
+    margin-left: 10px;
+    border:3px solid gray;
+}
+span{
+    color:rgb(183, 75, 75);
+    font-weight: 900;
+}
+p{
+    font-size: 12px;
+}
+.add{
+    margin: 5px;
+    padding: 3px;
+    background-color: rgb(229, 228, 228);
+    font-size: 10px;
+    color:rgb(159, 156, 156);
+}
+@media screen and (max-width: 800px) {
+    .card{
+        width: 100px;
+    }
+    
+}

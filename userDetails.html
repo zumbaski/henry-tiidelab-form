@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info </title>
+</head>
+<link rel="stylesheet" href="./assets/css/formstyle.css">
+<body>
+
+  <div class="container">
+
+  </div>
+
+
+  <script>
+      const wrapper1 = document.querySelector(".container");
+      let user = JSON.parse(localStorage.getItem("user"));
+
+      let template= 
+    `
+    <table border="5" id="table1" width="70%">
+        <tr><th colspan="3"><img src="./assets/img/zumbaski.png" width="80" height="80" alt="">
+
+                 <h2>FORM SUBMITTED</h2>
+            <p>Here is the Information you provided for the Registration .</p>
+            </th></tr> 
+ 
+             <tr>
+                 <th colspan="3"><h2>Student Information</h2></th>
+             </tr>
+             <tr>
+                 <td> First Name: <b>${user.firstName}</b></td>
+                 <td> Middle Name:  <b>${user.midName}</b></td>
+                 <td> Last Name:  <b>${user.lastName}</b></td>
+             </tr>
+
+             <tr>
+                 <td> Date of Birth: <b>${user.dob}</b></td>
+                 <td colspan="2">Student ID :   <b>${user.stdId}</b></td>
+                 
+             </tr>
+             <tr>
+                 <th colspan="3"><h2>Address</h2></th>
+             </tr>
+             <tr>
+                 <td> Street Address: <b>${user.address}</b></td>
+                 <td> City: <b>${user.city}</b></td>
+                 <td> State: <b>${user.state}</b></td>
+             </tr>
+
+             <tr>
+                 <td> Country: <b>${user.country}</b></td>
+                 <td colspan="2">Zip Code: <b>${user.zip}</b></td>
+                 
+             </tr>
+             <tr>
+                 <th colspan="3"><h2>Contact</h2></th>
+             </tr>
+             <tr>
+                 <td> Email: <b>${user.email}</b></td>
+                 <td colspan="2">Phone Number: <b>${user.email2}</b></td>  
+             </tr>
+
+             <tr>
+                 <th colspan="3"><h2>Courses </h2></th>
+             </tr>
+             <tr>
+                 <td> Course: <b>${user.course}</b></td>
+                 <td> Level: <b>${user.level}</b></td>
+                 <td>Language: <b>${user.language}</b></td>
+             </tr>
+             <tr>
+                 <td> Start Date: <b>${user.startDate}</b></td>
+                 <td colspan="2" rowspan='3'>Comment: <b>${user.comment}</b></td>           
+             </tr>
+     </table>
+    `;
+      wrapper1.innerHTML = template;
+  </script>
+</body>
+</html>
